@@ -4,7 +4,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    @font-face {
+      font-family: 'La Flibustisre';
+      src: url(https://res.cloudinary.com/areeba/raw/upload/v1650492268/La_Flibusti%C3%A8re.ttf);
+    }
+    
+    body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .wedding-card {
+      margin-top: 80px;
+      position: relative;
+      perspective: 1000px;
+      width: 90%;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .square-container {
+      position: relative;
+      width: 100%;
+      padding-top: 100%; /* This makes the container square */
+    }
+
+    .square-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    p {
+      color: #BE8D49;
+      font-family: 'Lobster', cursive;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    h1 {
+      font-family: 'La Flibustisre';
+      color: #BE8D49;
+    }
+    
+    .container {
+      background: url('https://res.cloudinary.com/areeba/image/upload/v1650488986/938ba925943764901f2c2889ea835d42--dark-navy-blue-cobalt-blue.jpg');
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-left: 1px solid rgb(181,119,41);
+      transform-origin: left center;
+      transition: 2s;
+    }
+    
+    .invite h1 {
+      text-align: center;
+      font-size: 45px;
+      margin-top: 0px;
+      margin-bottom: 0;
+      background: -webkit-linear-gradient(#F7D182, #A16A2A);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    hr {
+      margin-top: 20px;
+      margin-bottom: -10px;
+      width: 200px;
+      border-top: 0.5px solid rgb(181,119,41) !important;
+      border: none;
+    }
+    
+    .invite {
+      position: relative;
+      top: -140px;
+    }
+    
+    .border-1,
+    .border-2,
+    .border-3,
+    .border-4 {
+      width: 40%;
+    }
+    
+    .border-2 {
+      transform: scaleX(-1);
+      float: right;
+    }
+    
+    .border-3 {
+      transform: scaleY(-1);
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+    
+    .border-4 {
+      transform: scaleY(-1) scaleX(-1);
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+    
+    .cover {
+      background: url('https://res.cloudinary.com/areeba/image/upload/v1650488986/938ba925943764901f2c2889ea835d42--dark-navy-blue-cobalt-blue.jpg');
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transform-origin: left center;
+      transition: 2s;
+      z-index: 1;
+      position: absolute;
+    }
+    
+    .cover:hover {
+      transform: rotateY(-100deg);
+    }
+    
+    .cover-style {
+      width: 100%;
+      position: relative;
+    }
+    
+    .cover-heading {
+      position: relative;
+      bottom: 60%;
+      left: 20%;
+      font-size: 50px;
+      background: -webkit-linear-gradient(#F7D182, #A16A2A);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .six {
+      opacity: 0.3;
+      width: 1000px;
+      height: 1500px;
+      margin-left: auto;
+      margin-right: auto;
+      top: -140px;
+    }
+    
+    @media (max-width: 768px) {
+      .invite h1 {
+        font-size: 30px;
+      }
+      
+      .cover-heading {
+        font-size: 30px;
+        bottom: 50%;
+      }
+      
+      .border-1,
+      .border-2,
+      .border-3,
+      .border-4 {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wedding-card">
+    <div class="square-container">
+      <div class="square-content">
+        <div class="cover">
+          <img src="https://res.cloudinary.com/areeba/image/upload/v1650491336/Pngtree_golden_line_mandala_pattern_decorative_5960487.png" class="cover-style" />
+          <h1 class="cover-heading">Rachana & Ajit</h1>
+        </div>
+        <div class="container">
+          <img src="https://res.cloudinary.com/areeba/image/upload/v1650490204/free-golden-deco-corner-clipart-photo-background-gold-corner-border-lace-pattern-text-graphics-transparent-png-1536307.png" class="border-1" />
+          <img src="https://res.cloudinary.com/areeba/image/upload/v1650490204/free-golden-deco-corner-clipart-photo-background-gold-corner-border-lace-pattern-text-graphics-transparent-png-1536307.png" class="border-2" />
+          <div class="invite">
+            <h1>Engagement Invitation</h1>
+            <p>We request the honour of your presence and blessings <br />
+              on the auspecious occusation of the engagement of </p>
+            <h1>Ajit</h1>
+            <p>S/O Arvind & Sunita Kulkarni</p>
+            <h1>Rachana</h1>
+            <p>D/O Ratnakar & Rohini Kulkarni</p>
+            <hr>
+            <p>19th of July, At 1 PM, <br>Hotel Grand Mehfil, Nevale Wasti, Chikhli, Pune.</p>
+          </div>
+          <img src="https://res.cloudinary.com/areeba/image/upload/v1650490204/free-golden-deco-corner-clipart-photo-background-gold-corner-border-lace-pattern-text-graphics-transparent-png-1536307.png" class="border-3" />
+          <img src="https://res.cloudinary.com/areeba/image/upload/v1650490204/free-golden-deco-corner-clipart-photo-background-gold-corner-border-lace-pattern-text-graphics-transparent-png-1536307.png" class="border-4" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
     @font-face {
       font-family: 'La Flibustisre';
       src: url(https://res.cloudinary.com/areeba/raw/upload/v1650492268/La_Flibusti%C3%A8re.ttf);
